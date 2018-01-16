@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Call_Im</string>
+
+    <string name="tip_accept_call">接听来电</string>
+    <string name="tip_reject_call">拒接来电</string>
+    <string name="tip_end_call">挂断</string>
+
+    <string name="tip_close_camera">关闭摄像头</string>
+    <string name="tip_open_camera">打开摄像头</string>
+    <string name="tip_switch_camera">切换摄像头</string>
+    <string name="tip_close_mic">关闭麦克风</string>
+    <string name="tip_open_mic">打开麦克风</string>
+    <string name="tip_set_speaker">切换到扬声器</string>
+    <string name="tip_set_headset">切换到听筒</string>
+    <string name="tip_set_beauty">设置美颜</string>
+
+    <string name="toast_phone_empty">呼叫号码不能为空</string>
+    <string name="makecall">呼叫</string>
+    <string name="phonenum_tips">请输入需要拨打手机号</string>
+    <string name="phone_number">呼叫号码</string>
+    <string name="myphone">本机号码</string>
+    <string name="invite">邀请</string>
+    <string name="log">日志</string>
+    <string name="invite_tip">输入邀请用户id</string>
+    <string name="cancel">取消</string>
+
+
+
+    <string name="chat_up_finger">手指上滑，取消发送</string>
+    <string name="confirm">确定</string>
+    <string name="chat_press_talk">按住 说话</string>
+    <string name="chat_release_send">松开 结束</string>
+    <string name="chat_image">图片</string>
+    <string name="chat_voip">语言通话</string>
+    <string name="chat_photo">拍摄</string>
+    <string name="chat_video">视频通话</string>
+    <string name="chat_audio_too_short">录音过短，请重试</string>
+    <string name="chat_video_too_short">录制过短，请重试</string>
+    <string name="chat_resend">重新发送</string>
+    <string name="chat_del">删除</string>
+    <string name="chat_save">保存</string>
+    <string name="chat_file_too_large">文件过大，发送失败</string>
+    <string name="chat_file_not_exist">文件不存在，发送失败</string>
+    <string name="chat_image_preview_title">图片预览</string>
+    <string name="chat_image_preview_send">发送</string>
+    <string name="chat_image_preview_load_err">图片加载失败</string>
+    <string name="chat_image_preview_ori">原图发送</string>
+
+    <!-- time -->
+    <string name="time_yesterday">昨天</string>
+    <string name="time_day">日</string>
+    <string name="time_month">月</string>
+    <string name="time_year">年</string>
+    <string name="time_more">99+</string>
+    <string name="title_activity_group_chat_setting">GroupChatSettingActivity</string>
+
+</resources>
