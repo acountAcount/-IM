@@ -92,12 +92,6 @@ public class ChatActivity extends TencentCloudActivity implements SendMessage,Me
             }
         });
 
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         tentChatHold.messageList(senderId, new MessageListsRequest() {
             @Override
             public void onSuccess(List<Message> list) {
@@ -110,6 +104,13 @@ public class ChatActivity extends TencentCloudActivity implements SendMessage,Me
                 Toast.makeText(getApplicationContext(),"获取不到聊天记录",Toast.LENGTH_LONG).show();
             }
         });
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     @Override

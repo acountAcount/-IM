@@ -2,12 +2,15 @@ package tango.sudao.com.call_test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.tencent.TIMManager;
+import com.tencent.TIMOfflinePushSettings;
 import com.tencent.ilivesdk.ILiveCallBack;
 import com.tencent.ilivesdk.core.ILiveLoginManager;
 
@@ -38,7 +41,15 @@ public class SplashActivity  extends Activity{
         ILiveLoginManager.getInstance().iLiveLogin(id, userSig, new ILiveCallBack() {
             @Override
             public void onSuccess(Object data) {
+                TIMOfflinePushSettings settings = new TIMOfflinePushSettings();
+//开启离线推送
+                settings.setEnabled(true);
+//设置收到C2C离线消息时的提示声音，这里把声音文件放到了res/raw文件夹下
+                settings.setC2cMsgRemindSound(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.dudulu));
+//设置收到群离线消息时的提示声音，这里把声音文件放到了res/raw文件夹下
+                settings.setGroupMsgRemindSound(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.dudulu));
 
+                TIMManager.getInstance().configOfflinePushSettings(settings);
                 Log.d("succ","login");
                     Intent intent =new Intent(SplashActivity.this,ChatActivity.class);
                 startActivity(intent);
